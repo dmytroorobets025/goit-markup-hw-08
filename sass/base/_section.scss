@@ -1,0 +1,21 @@
+
+
+.section {
+    padding: 60px 0;
+    background: var(--color-white);
+
+    @media screen and (min-width:1199px) {
+        padding: 94px 0;
+        
+    }
+}
+
+.section-portfolio {
+    padding: 94px 0;
+}
+
+.section-team {
+    padding: 94px 0;
+
+    background-color: #f5f4fa;
+}

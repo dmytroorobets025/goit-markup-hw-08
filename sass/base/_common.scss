@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+.general {
+    flex: 1 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-text-color);
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+

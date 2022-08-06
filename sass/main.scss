@@ -1,0 +1,29 @@
+@import "./utils/root";
+
+@import "./base/common";
+@import "./base/containeer";
+@import "./base/section";
+
+@import "./layout/section-header/header-logo";
+@import "./layout/section-header/header-navigation";
+@import "./layout/section-header/header-contact";
+
+@import "./layout/section-hero/hero";
+@import "./layout/section-about-us";
+@import "./layout/section-w-d-w-d";
+@import "./layout/social-team.scss";
+@import "./layout/team-item.scss";
+@import "./layout/regular-customers";
+
+@import "./layout/section-footer/footer-logo";
+@import "./layout/section-footer/footer-contact";
+@import "./layout/section-footer/footer-join";
+@import "./layout/section-footer/subscibe-box";
+
+@import "./layout/portfolio/portfolio-btn.scss";
+@import "./layout/portfolio/portfolio-cards";
+
+@import "./components/modal-windov/backdrop";
+@import "./components/modal-windov/modal";
+@import "./components/modal-windov/modal-btn";
+@import "./components/modal-windov/modal-form";

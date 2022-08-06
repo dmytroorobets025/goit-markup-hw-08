@@ -1,0 +1,74 @@
+.footer-contact :not(:last-child) {
+  padding-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 9px;
+  }
+}
+
+.footer-address {
+  margin-top: 20px;
+}
+
+.address-item .address-sity {
+  display: flex;
+  align-items: center;
+}
+
+.address-sity {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  line-height: 1.7;
+  text-decoration: none;
+  color: var(--color-white);
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.contacts {
+  font-style: normal;
+  line-height: 1.7;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-section-fon);
+    color: var(--accent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer-addres-box {
+  display: block;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-left: 90px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
+
+.contacts-studio {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
