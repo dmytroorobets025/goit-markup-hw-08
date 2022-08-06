@@ -5,6 +5,11 @@
     margin-right: auto;
     width: 450px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    width: 570px;
+  }
 }
 
 .subscribe-title {
@@ -31,6 +36,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 0px;
+    flex-wrap: nowrap;
+  }
 }
 
 .subscribe-email {
@@ -81,7 +92,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
   cursor: pointer;
   min-width: 200px;
   padding: 10px 28px;

@@ -1,11 +1,11 @@
 .buttons {
   display: flex;
   margin-bottom: 50px;
+
   flex-wrap: wrap;
   gap: 8px;
-}
-@media screen and (min-width: 768px) {
-  .buttons {
+
+  @media screen and (min-width: 768px) {
     justify-content: center;
   }
 }
@@ -18,8 +18,10 @@
 
 .list-of-buttons {
   padding: 6px 22px;
+
   border: none;
   border-radius: 4px;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -28,14 +30,18 @@
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   cursor: pointer;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.list-of-buttons:hover, .list-of-buttons:focus {
-  background-color: var(--accent-color);
-  color: var(--color-white);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--color-white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
 }
 
 .list-of-buttons.current {
@@ -44,4 +50,4 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}/*# sourceMappingURL=portfolio-btn.css.map */
+}

@@ -1,20 +1,28 @@
 .navigation {
   padding-top: 0;
-  margin-left: 86px;
 
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 0;
+  }
 }
 
 .header_box {
+  display: flex;
+  align-items: center;
+
   @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
     padding: 0;
     margin: 0;
     height: auto;
     width: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
   }
 }
 
@@ -114,9 +122,13 @@
 
 .navigation__list {
   display: flex;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 93px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
-    display: flex;
   }
 
   &:focus {

@@ -1,3 +1,24 @@
+.work-list-pozition {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    row-gap: 30px;
+  }
+}
+
 .img-paddings {
   display: block;
   width: 100%;
@@ -21,8 +42,10 @@
 .work-list {
   width: 1200px;
   padding: 0 15px;
+}
 
-  &-pozition {
+.work-list-pozition {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -32,14 +55,17 @@
 .work-elements {
   width: 100%;
 
-  margin: 15px;
-
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (max-widht: 1200px) {
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 370px;
+    margin: 15px;
   }
 }
 

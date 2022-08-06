@@ -3,9 +3,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-}
-@media screen and (min-width: 1200px) {
-  .team-box {
+
+  @media screen and (min-width: 1200px) {
     margin-top: 50px;
   }
 }
@@ -14,23 +13,24 @@
   width: 100%;
   max-width: 450px;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .team-element {
+
+  @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
-}
-@media screen and (min-width: 1200px) {
-  .team-element {
-    width: calc((100% - 90px) / 4);
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 3) / 4);
   }
 }
 
 .workers {
   margin-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -49,4 +49,4 @@
   justify-content: center;
   padding-top: 16px;
   padding-bottom: 30px;
-}/*# sourceMappingURL=team-item.css.map */
+}

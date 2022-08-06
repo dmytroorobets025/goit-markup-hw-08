@@ -1,12 +1,13 @@
 .contact .navigation__item + .navigation__item {
   margin-left: 50px;
+  background-color: black;
 }
 
-.contact .contact__item + .contact__item {
-  @media screen and (min-width: 1199px) {
-    margin-left: 50px;
-  }
-}
+// .contact .contact__item + .contact__item {
+//   @media screen and (min-width: 1199px) {
+//     margin-left: 50px;
+//   }
+// }
 
 .contact {
   //   padding-top: 0;
@@ -20,10 +21,13 @@
     width: 165px;
   }
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: auto;
-    flex-wrap: wrap;
+    flex-direction: row;
+    width: 360px;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
 
