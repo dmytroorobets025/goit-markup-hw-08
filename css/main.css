@@ -1023,11 +1023,17 @@ ul {
 }
 
 .buttons {
+  display: flex;
   width: 360px;
   margin-bottom: 50px;
-  display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .buttons {
+    justify-content: center;
+    width: 620px;
+  }
 }
 
 .buttons:focus,

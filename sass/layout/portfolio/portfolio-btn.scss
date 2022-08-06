@@ -1,15 +1,12 @@
 .buttons {
-  width: 360px;
-  margin-bottom: 50px;
   display: flex;
+  margin-bottom: 50px;
 
   flex-wrap: wrap;
   gap: 8px;
 
   @media screen and (min-width: 768px) {
-    display: flex;
     justify-content: center;
-    width: 0;
   }
 }
 
