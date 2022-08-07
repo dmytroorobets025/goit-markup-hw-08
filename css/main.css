@@ -359,6 +359,7 @@ ul {
     margin-left: auto;
     display: flex;
     flex-direction: column;
+    row-gap: 10px;
     width: 165px;
   }
 }
@@ -374,6 +375,8 @@ ul {
 }
 
 .contact__link {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
