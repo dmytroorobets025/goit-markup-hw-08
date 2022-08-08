@@ -13,7 +13,6 @@
   display: none;
 
   @media screen and (min-width: 768px) {
-    margin-left: auto;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -21,12 +20,11 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
+    margin-left: 296px;
     flex-direction: row;
     width: 360px;
     gap: 30px;
     align-items: center;
-    justify-content: flex-end;
   }
 }
 
