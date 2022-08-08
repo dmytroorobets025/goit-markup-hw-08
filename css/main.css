@@ -1276,12 +1276,13 @@ ul {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 96%;
+  height: 96%;
   padding: 40px;
   top: 50%;
   left: 50%;
   border-radius: 4px;
+  overflow: auto;
   transform: translate(-50%, -50%) scale(1);
   transition-duration: 250ms;
   transition-timing-function: translate cubic-bezier(0.4, 0, 0.2, 1);
@@ -1304,6 +1305,18 @@ ul {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
+}
 .button-back {
   position: absolute;
   top: 8px;
@@ -1479,19 +1492,25 @@ ul {
 
 .contract-info {
   line-height: 1.7;
-  text-decoration: none;
   color: var(--accent-color);
 }
-.contract-info:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0.34em;
-  width: 112px;
-  height: 1px;
-  background-color: var(--accent-color);
-}
 
+@media screen and (min-width: 768px) {
+  .contract-info {
+    line-height: 1.7;
+    text-decoration: none;
+    color: var(--accent-color);
+  }
+  .contract-info:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0.34em;
+    width: 112px;
+    height: 1px;
+    background-color: var(--accent-color);
+  }
+}
 .send-button {
   margin: 0 auto;
   padding: 10px 56px;
