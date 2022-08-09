@@ -93,7 +93,7 @@
 }
 
 .mobile-menu__contact-box {
-  margin-top: 300px;
+  margin-top: 370px;
   margin-left: 25px;
 }
 
@@ -109,6 +109,10 @@
   text-decoration: none;
 
   color: var(--accent-color);
+
+  @media screen and (max-width: 360px) {
+    font-size: 24px;
+  }
 }
 
 .mobile-menu__contact-email {
@@ -119,6 +123,10 @@
   text-decoration: none;
 
   color: #757575;
+
+  @media screen and (max-width: 360px) {
+    font-size: 18px;
+  }
 }
 
 .mobile-menu__networks-box {
@@ -127,7 +135,6 @@
 
   margin-top: 60px;
   margin-left: 15px;
-  margin-bottom: 50px;
 }
 
 .mobile-menu__networks {
@@ -148,4 +155,8 @@
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
+
+  @media screen and (max-width: 360px) {
+    font-size: 14px;
+  }
 }

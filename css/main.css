@@ -497,12 +497,12 @@ ul {
 .img-bgr-hero {
   padding: 120px 0;
   text-align: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--primary-section-fon);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio-html.img/bagraund-sm.jpg);
   background-position: center;
-  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -524,14 +524,14 @@ ul {
 @media screen and (min-width: 1200px) {
   .img-bgr-hero {
     padding: 200px 0;
-    background-size: cover;
+    background-size: contain;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio-html.img/bagraund-lg.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .img-bgr-hero {
     padding: 200px 0;
-    background-size: cover;
+    background-size: contain;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio-html.img/bagraund-lg@2x.jpg);
   }
 }
@@ -1002,7 +1002,6 @@ ul {
 .subscribe-title {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1121,10 +1120,12 @@ ul {
 
 .subscribe-box {
   width: 100%;
+  margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .subscribe-box {
     width: auto;
+    margin-top: 0;
   }
 }
 
@@ -1264,12 +1265,13 @@ ul {
   overflow: hidden;
   position: relative;
 }
+
 .work-elements-hover-text {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  padding: 63px 24px;
+  padding: 8px 2px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -1279,6 +1281,11 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(102%);
+}
+@media screen and (min-width: 480px) {
+  .work-elements-hover-text {
+    padding: 63px 24px;
+  }
 }
 
 .decoration-work-lilt {
@@ -1422,8 +1429,8 @@ ul {
 
 .modal-user {
   position: absolute;
-  top: 50%;
-  left: 5%;
+  top: 20px;
+  left: 20px;
   transform: translate(-50%, -50%);
   fill: var(--title-text-color);
   transition-property: fill;
@@ -1661,7 +1668,7 @@ ul {
 }
 
 .mobile-menu__contact-box {
-  margin-top: 300px;
+  margin-top: 370px;
   margin-left: 25px;
 }
 
@@ -1677,6 +1684,11 @@ ul {
   text-decoration: none;
   color: var(--accent-color);
 }
+@media screen and (max-width: 360px) {
+  .mobile-menu__contact-phone {
+    font-size: 24px;
+  }
+}
 
 .mobile-menu__contact-email {
   font-weight: 500;
@@ -1686,13 +1698,17 @@ ul {
   text-decoration: none;
   color: #757575;
 }
+@media screen and (max-width: 360px) {
+  .mobile-menu__contact-email {
+    font-size: 18px;
+  }
+}
 
 .mobile-menu__networks-box {
   display: flex;
   flex-wrap: wrap;
   margin-top: 60px;
   margin-left: 15px;
-  margin-bottom: 50px;
 }
 
 .mobile-menu__networks {
@@ -1711,4 +1727,9 @@ ul {
   text-decoration: none;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (max-width: 360px) {
+  .networks-link {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */
